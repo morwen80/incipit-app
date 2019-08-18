@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:Montserrat:400,700,900|Miss+Fajardose|Mr+De+Haviland&display=swap');
+
+:root {
+  --light1: #E7F0F1;
+  --light2: #9FC4C6;
+  --medium1: #57989D;
+  --medium2: #317A82;
+  --dark1: #20575C;
+  --dark2: #164045;
+
+  --grey1: #a5a5a5;
+  --grey2: #515354;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body, html {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.1rem;
+  color: var(--grey2);
+}
+
+a:active, a:visited {
+  color: var(--medium2);
+}
+
+.newPromptBtn, .loginBtn, .signupBtn {
+  margin-top: 1rem;
+  background-color: var(--medium2);
+  color: var(--light1);
+}
+
+.newPromptBtn:hover, .loginBtn:hover, .signupBtn:hover {
+  background-color: var(--dark2);
+}
+
+/* HEADER  */
+.header .brand {
+  font-family: 'Miss Fajardose', cursive;
+  font-size: 5rem;
+  display: inline-block;
+  margin-top: -1rem;
+  transform: rotate(-5deg);
+  color: var(--dark2);
+}
+.header h2 {
+  text-align: center;
+  padding-bottom: 2.5rem;
+  color: var(--dark2);
+}
+.logoutBtn {
+  position: absolute;
+  top: 1px;
+  right: 1px;
+  border: none;
+  color: var(--medium2);
+}
+
+
+/* HOME */
+.home {
+  border: 1px solid var(--dark1);
+  padding: 0;
+}
+.main {
+  padding: 1rem;
+  box-sizing: content-box;
+}
+
+.btns button {
+  height: 3rem;
+  width: 50%;
+  border-radius: 0;
+  margin: 0;
+  padding: 0;
+  font-weight: 900;
+  color: var(--dark2);
+}
+.btns .random {
+  float: left;
+  background-color: var(--light1);
+}
+.newBtn {
+  background-color: var(--light2);
+}
+
+/* SIGNUP */
+
+.signup {
+  width: 50%;
+}
+.signup form {
+  padding-top: 2.5rem;
+}
+
+/* LOGIN  */
+.login {
+  width: 50%;
+}
+
+ .login form {
+  padding-top: 2.5rem;
+}
+
+
+
+/* SINGLE PROMPT */
+.singlePrompt {
+  padding: 1rem 1rem .1rem 1rem;
+}
+.singlePrompt button {
+  display: inline-block;
+  float: right;
+  font-size: 1.3rem;
+  color: var(--grey1);
+  border: none;
+  -webkit-transition: transform .6s;
+  transition: transform .6s;
+}
+.singlePrompt button:hover {
+  color: var(--dark1);
+  transform: scale(1.7);
+}
+
+
+/* @keyframes likeButton {
+  from {
+    background-color: var(--grey1);
+    font-size: 1.3rem;
+  }
+  to {background-color: var(--dark1);
+      font-size: 2.2rem;
+  };
+} */
+
+.fa-user {
+  font-weight: 700;
+  color: var(--medium2);
+  margin-right: .6rem;
+}
+.likesNum {
+  padding: .1rem 1rem;
+  margin-left: .6rem;
+  border-radius: 5px;
+  background-color: var(--medium2);
+  color: var(--light1);
+}
+/* NEW PROMPT */
+.newPrompt {
+  width: 50%;
+}
+.newPrompt label {
+  color: var(--dark1);
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+
+
+/* MEDIA QUERIES =============== */
+@media only screen and (max-width: 600px) {
+  .header h2 {
+    margin-top: 2rem;
+    padding-bottom: 1.5rem;
+  }
+
+  .btns button {
+    width: 100%;
+  }
+
+  .login, .signup, .newPrompt {
+    width: 100%;
+  }
+}
