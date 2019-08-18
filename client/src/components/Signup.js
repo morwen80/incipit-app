@@ -3,6 +3,7 @@ import { withRouter } from 'react-router';
 import app from '../base';
 
 import Button from 'react-bootstrap/Button';
+import Container from 'react-bootstrap/Container';
 
 const Signup = ({ history }) => {
   const handleSignUp = useCallback(async event => {
@@ -20,11 +21,10 @@ const Signup = ({ history }) => {
   }, [history]);
 
   return(
-    <div className="container signup">
+    <Container className="container signup">
       <h5>Welcome to INCIPIT.</h5>
       <hr />
       <h6>Please create an account to add your own writing prompt.</h6>
-
 
       <form onSubmit={handleSignUp}>
       <div className="form-group">
@@ -39,7 +39,7 @@ const Signup = ({ history }) => {
       </div>
       <Button type="submit" className="signupBtn">Sign Up</Button>
       </form>
-    </div>
+    </Container>
   )
 }
 

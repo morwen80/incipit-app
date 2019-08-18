@@ -1,4 +1,6 @@
-import React from 'react'
+import React from 'react';
+import Container from 'react-bootstrap/Container';
+import Button from 'react-bootstrap/Button';
 
 class AddPrompt extends React.Component {
   constructor(props){
@@ -37,7 +39,7 @@ class AddPrompt extends React.Component {
 
   render(){
     return(
-      <div className="newPrompt container">
+      <Container className="newPrompt">
           <form onSubmit={this.addNewPrompt}>
           <div className="form-group">
 
@@ -60,10 +62,10 @@ class AddPrompt extends React.Component {
             />
           </label>
           </div>
-            <button type="submit" className="btn newPromptBtn">submit</button>
+            <Button type="submit" className="btn newPromptBtn">submit</Button>
           </form>
 
-      </div>
+      </Container>
     )
   }
 }

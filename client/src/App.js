@@ -15,10 +15,10 @@ const App = () => {
     <AuthProvider>
     <Router>
     <Header />
-        <Route exact path='/' component={Home} />
-        <Route exact path='/login' component={Login} />
-        <Route exact path='/signup' component={Signup} />
-        <PrivateRoute exact path='/new' component={AddPrompt} />
+      <Route exact path='/' component={Home} />
+      <Route exact path='/login' component={Login} />
+      <Route exact path='/signup' component={Signup} />
+      <PrivateRoute exact path='/new' component={AddPrompt} />
     </Router>
     </AuthProvider>
   );

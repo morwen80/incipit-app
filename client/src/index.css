@@ -7,7 +7,6 @@
   --medium2: #317A82;
   --dark1: #20575C;
   --dark2: #164045;
-
   --grey1: #a5a5a5;
   --grey2: #515354;
 }
@@ -48,17 +47,19 @@ a:active, a:visited {
   color: var(--dark2);
 }
 .header h2 {
+  font-family: 'Montserrat', sans-serif;
   text-align: center;
   padding-bottom: 2.5rem;
   color: var(--dark2);
 }
 .logoutBtn {
+  font-family: 'Montserrat', sans-serif;
   position: absolute;
   top: 3px;
   right: 3px;
   border: none;
   font-size: 1rem;
-  color: var(--medium2);
+  color: var(--medium2)!important;
 }
 
 
@@ -69,7 +70,6 @@ a:active, a:visited {
 }
 .main {
   padding: 1rem;
-  box-sizing: content-box;
 }
 
 .btns button {
@@ -84,11 +84,13 @@ a:active, a:visited {
   color: var(--dark2);
 }
 .btns .random {
-  float: left;
-  background-color: var(--light1);
+  float: left!important;
+  border: 0!important;
+  background-color: var(--light1)!important;
 }
 .newBtn {
-  background-color: var(--light2);
+  border: none!important;
+  background-color: var(--light2)!important;
 }
 
 /* SIGNUP */
@@ -101,6 +103,7 @@ a:active, a:visited {
 
 /* LOGIN  */
 .login {
+  font-family: 'Montserrat', sans-serif;
   width: 50%;
 }
 
@@ -108,12 +111,15 @@ a:active, a:visited {
   padding-top: 2.5rem;
 }
 
-
 /* SINGLE PROMPT */
 .singlePrompt {
-  padding: 1rem 1rem .1rem 1rem;
+  padding: 1rem 0 .1rem .4rem;
 }
-.singlePrompt button {
+.singlePrompt {
+  font-size: 1.1rem;
+  font-family: 'Montserrat', sans-serif;
+}
+#likeIcon {
   display: inline-block;
   float: right;
   margin-right: .6rem;
@@ -123,17 +129,20 @@ a:active, a:visited {
   -webkit-transition: transform .6s;
   transition: transform .6s;
 }
-.singlePrompt button:hover {
+#likeIcon:hover {
   color: var(--dark1);
   transform: scale(1.7);
 }
 
-.fa-user {
-  padding-top: 1rem;
+#userIcon {
+  font-size: 1.2rem;
+  padding-top: .2rem;
   font-weight: 700;
   color: var(--medium2);
   margin-right: .6rem;
+  border: none;
 }
+
 .likesNum {
   padding: .1rem 1rem;
   margin-left: .6rem;

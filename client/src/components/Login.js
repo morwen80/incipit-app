@@ -2,7 +2,10 @@ import React, { useCallback, useContext } from 'react';
 import { withRouter, Redirect } from 'react-router';
 import { Link } from 'react-router-dom';
 import app from '../base';
-import { AuthContext } from '../Auth'
+import { AuthContext } from '../Auth';
+
+import Container from 'react-bootstrap/Container';
+import Button from 'react-bootstrap/Button';
 
 const Login = ({ history }) => {
   const handleLogin = useCallback(async event => {
@@ -26,7 +29,7 @@ if (currentUser) {
 }
 
   return(
-    <div className="container login">
+    <Container className="login">
       <h5>You need to be logged in to add a new prompt</h5>
       <hr />
       <h6>New here? <Link to='/signup'>Create an account</Link>.</h6>
@@ -40,9 +43,9 @@ if (currentUser) {
           <label> Password </label>
           <input className="form-control" name="password" type="password" placeholder="password" />
       </div>
-      <button type="submit" className="btn loginBtn">Log in</button>
+      <Button type="submit" className="loginBtn">Log in</Button>
       </form>
-      </div>
+      </Container>
   )
 }
 

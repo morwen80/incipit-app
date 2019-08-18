@@ -1,6 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import SinglePrompt from './SinglePrompt'
+import SinglePrompt from './SinglePrompt';
+import Button from 'react-bootstrap/Button';
+import Container from 'react-bootstrap/Container';
 
 class Home extends React.Component {
  state = {
@@ -39,10 +41,10 @@ updatePrompt = (prompt) => {
 
 render(){
   return(
-    <div className="home container">
+    <Container className="home">
       <div className="btns">
-        <button className="random btn" onClick={this.randomPrompt}>random prompt</button>
-        <Link to="/new"> <button className="btn newBtn">add prompt</button> </Link>
+        <Button className="random" onClick={this.randomPrompt}>random prompt</Button>
+        <Link to="/new"> <Button className="newBtn">add prompt</Button> </Link>
       </div>
         <div className="main">
           <div className="promptSpace">
@@ -57,7 +59,7 @@ render(){
           }
           </div>
         </div>
-    </div>
+    </Container>
     )
   }
 }
