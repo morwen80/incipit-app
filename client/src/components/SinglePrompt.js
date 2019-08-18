@@ -1,14 +1,15 @@
 import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const SinglePrompt = (props) => {
   const { incrementLike, prompt } = props
 
   return(
     <div className="singlePrompt">
-      <button onClick={ () => incrementLike(prompt)}><i className="fas fa-heart"></i></button>
+      <button onClick={ () => incrementLike(prompt)}><FontAwesomeIcon icon="heart"/></button>
       <p>{prompt.prompt}</p>
       <hr />
-      <i className="fas fa-user"></i>{prompt.writer}
+      <FontAwesomeIcon icon="user"/>{prompt.writer}
       <span className="likesNum">{prompt.likes} likes</span>
   </div>
   )

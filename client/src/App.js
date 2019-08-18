@@ -9,7 +9,6 @@ import PrivateRoute from "./PrivateRoute";
 import AddPrompt from './components/AddPrompt';
 import Header from './components/Header';
 
-
 const App = () => {
   return (
     <AuthProvider>
