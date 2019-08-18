@@ -43,7 +43,7 @@ render(){
   return(
     <Container className="home">
       <div className="btns">
-        <Button className="random" onClick={this.randomPrompt}>random prompt</Button>
+        <Button className="randomBtn" onClick={this.randomPrompt}>random prompt</Button>
         <Link to="/new"> <Button className="newBtn">add prompt</Button> </Link>
       </div>
         <div className="main">
