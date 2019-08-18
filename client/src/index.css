@@ -29,12 +29,12 @@ a:active, a:visited {
 
 .newPromptBtn, .loginBtn, .signupBtn {
   margin-top: 1rem;
-  background-color: var(--medium2);
-  color: var(--light1);
+  background-color: var(--medium2)!important;
+  color: var(--light1)!important;
 }
 
 .newPromptBtn:hover, .loginBtn:hover, .signupBtn:hover {
-  background-color: var(--dark2);
+  background-color: var(--dark2)!important;
 }
 
 /* HEADER  */
@@ -42,7 +42,8 @@ a:active, a:visited {
   font-family: 'Miss Fajardose', cursive;
   font-size: 5rem;
   display: inline-block;
-  margin-top: -1rem;
+  margin-top: -1.4rem;
+  margin-left: .5rem;
   transform: rotate(-5deg);
   color: var(--dark2);
 }
@@ -53,9 +54,10 @@ a:active, a:visited {
 }
 .logoutBtn {
   position: absolute;
-  top: 1px;
-  right: 1px;
+  top: 3px;
+  right: 3px;
   border: none;
+  font-size: 1rem;
   color: var(--medium2);
 }
 
@@ -71,12 +73,14 @@ a:active, a:visited {
 }
 
 .btns button {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.1rem;
   height: 3rem;
   width: 50%;
   border-radius: 0;
   margin: 0;
   padding: 0;
-  font-weight: 900;
+  font-weight: 700;
   color: var(--dark2);
 }
 .btns .random {
@@ -88,7 +92,6 @@ a:active, a:visited {
 }
 
 /* SIGNUP */
-
 .signup {
   width: 50%;
 }
@@ -106,7 +109,6 @@ a:active, a:visited {
 }
 
 
-
 /* SINGLE PROMPT */
 .singlePrompt {
   padding: 1rem 1rem .1rem 1rem;
@@ -114,6 +116,7 @@ a:active, a:visited {
 .singlePrompt button {
   display: inline-block;
   float: right;
+  margin-right: .6rem;
   font-size: 1.3rem;
   color: var(--grey1);
   border: none;
@@ -125,18 +128,8 @@ a:active, a:visited {
   transform: scale(1.7);
 }
 
-
-/* @keyframes likeButton {
-  from {
-    background-color: var(--grey1);
-    font-size: 1.3rem;
-  }
-  to {background-color: var(--dark1);
-      font-size: 2.2rem;
-  };
-} */
-
 .fa-user {
+  padding-top: 1rem;
   font-weight: 700;
   color: var(--medium2);
   margin-right: .6rem;

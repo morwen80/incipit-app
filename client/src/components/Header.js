@@ -10,7 +10,7 @@ const Header = () => {
         <NavLink activeClassName="is-active" to='/' exact={true} > <h1 className="brand">incipit</h1> </NavLink>
       </nav>
       <h2>&#123; A Writing Prompt Generator &#125;</h2>
-      <button className="logoutBtn btn " onClick={() => app.auth().signOut()}>Logout <FontAwesomeIcon icon="sign-out-alt"/></button>
+      <button className="logoutBtn btn" onClick={() => app.auth().signOut()}>Logout <FontAwesomeIcon icon="sign-out-alt" sizing="lg"/></button>
     </div>
   )
 }

@@ -2,6 +2,8 @@ import React, { useCallback } from 'react';
 import { withRouter } from 'react-router';
 import app from '../base';
 
+import Button from 'react-bootstrap/Button';
+
 const Signup = ({ history }) => {
   const handleSignUp = useCallback(async event => {
     event.preventDefault();
@@ -23,6 +25,7 @@ const Signup = ({ history }) => {
       <hr />
       <h6>Please create an account to add your own writing prompt.</h6>
 
+
       <form onSubmit={handleSignUp}>
       <div className="form-group">
         <label> Email
@@ -34,7 +37,7 @@ const Signup = ({ history }) => {
         <input className="form-control" name="password" type="password" placeholder="password" />
       </label>
       </div>
-      <button type="submit" className="btn signupBtn">Sign Up</button>
+      <Button type="submit" className="signupBtn">Sign Up</Button>
       </form>
     </div>
   )
