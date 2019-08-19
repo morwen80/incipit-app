@@ -12,7 +12,7 @@ class Home extends React.Component {
 
 randomPrompt = (e) => {
   e.preventDefault();
-  fetch('http://localhost:4000/prompts')
+  fetch('/prompts')
   .then(resp => resp.json())
   .then(data => this.setState({
     prompt: data[Math.floor(Math.random() * data.length)],
@@ -27,7 +27,7 @@ incrementLike = (prompt) => {
 }
 
 updatePrompt = (prompt) => {
-  fetch(`http://localhost:4000/prompts/${prompt._id}`, {
+  fetch(`/prompts/${prompt._id}`, {
     method: 'PUT',
     headers: {
   'Accept': 'application/json',

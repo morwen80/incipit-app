@@ -1,5 +1,4 @@
 const express = require('express');
-// const cors = require('cors');
 const server = express();
 const body_parser = require('body-parser');
 
@@ -16,7 +15,6 @@ db.connect('./data', ['prompts']);
 
 server.use(body_parser.json());
 
-const port = process.env.PORT || 4000;
 
 if (process.env.NODE_ENV === "production") {
   server.use(express.static('client/build'));
@@ -26,10 +24,9 @@ if (process.env.NODE_ENV === "production") {
   })
 };
 
+const port = process.env.PORT || 4000;
 
-server.listen(port, () => {
-    console.log(`Server listening at ${port}`);
-});
+server.listen(port, () => console.log(`Server listening at ${port}`));
 
 
 // CREATE

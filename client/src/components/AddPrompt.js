@@ -25,7 +25,7 @@ class AddPrompt extends React.Component {
       writer: this.state.writer,
       likes: 1
     }
-    fetch("http://localhost:4000/prompts", {
+    fetch("/prompts", {
       method: 'POST',
       headers: {
     'Accept': 'application/json',
